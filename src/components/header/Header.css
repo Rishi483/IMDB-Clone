@@ -1,0 +1,44 @@
+.header__icon{
+    max-width: 5rem;
+    cursor: pointer;
+}
+.header{
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0 0.4rem;
+    margin-right: 0.5rem;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #cbbe0b;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
